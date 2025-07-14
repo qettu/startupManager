@@ -1,9 +1,7 @@
 # startupManager
 Batch-file that opens on startup and makes continuing old projects easier
 
-
-
-StartupManager by Niilo Vertainen
+<br>
 
 To make Startup Manager start automatically when computer starts (Windows 11):
  1. Press WindowsKey + R
