@@ -61,8 +61,10 @@ start "" "C:\Users\username\AppData\Local\Microsoft\WindowsApps\gimp-3.exe"::   
 start "" "D:\Apps\paint.net\paintdotnet.exe" ::                                  <- change path. For example: start "" "D:\Apps\paint.net\paintdotnet.exe"
 :: We should wait browser to open...
 TIMEOUT /T 7 ::                                                                  <- If browser takes more time to start, you can change number (seconds)
-:: About seven seconds later browser is ready and we can open the page we want
+:: About seven seconds later browser is ready and we can open the pages we want
 start "" "https://open.spotify.com/"
+TIMEOUT /T 1 :: To make sure all tabs open correctly, I've added one second time delay
+start "" "https://www.bible.com/bible/111/JHN.1.NIV"
 :: Goto end after blender part
 goto no
 
@@ -78,9 +80,10 @@ start "" "C:\Users\username\AppData\Local\GitHubDesktop\GitHubDesktop.exe" ::   
 start "" "C:\Users\username\Documents\GitHub" ::                                 <- change path. For example: start "" "C:\Users\username\Documents\GitHub"
 :: We should wait browser to open...
 TIMEOUT /T 7 ::                                                                  <- If browser takes more time to start, you can change number (seconds)
-:: About seven seconds later browser is ready and we can open the page we want
+:: About seven seconds later browser is ready and we can open the pages we want
 start "" "https://open.spotify.com/"
-:: To make sure all tabs open correctly, I've added one second time delay
+TIMEOUT /T 1 :: To make sure all tabs open correctly, I've added one second time delay
+start "" "https://www.bible.com/bible/111/JHN.1.NIV"
 TIMEOUT /T 1
 start "" "https://qettu.github.io/" ::                                           <- change your GitHub username
 TIMEOUT /T 1
