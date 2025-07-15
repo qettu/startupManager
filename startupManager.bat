@@ -49,7 +49,7 @@ echo ^| Incorrect input. (n and enter to skip and quit)                         
 
 
 
-:: Deside which programs should be started with blender
+:: Decide which programs should be started with blender
 :blender
 :: Browser opening takes time, so we should first open one page 
 start "" "https://www.duckduckgo.com"
@@ -63,11 +63,11 @@ start "" "D:\Apps\paint.net\paintdotnet.exe" ::                                 
 TIMEOUT /T 7 ::                                                                  <- If browser takes more time to start, you can change number (seconds)
 :: About seven seconds later browser is ready and we can open the page we want
 start "" "https://open.spotify.com/"
+:: Goto end after blender part
+goto no
 
 
-
-
-:: Deside which programs should be started with GitHub projects
+:: Decide which programs should be started with GitHub projects
 :git
 :: Browser opening takes time, so we should first open one page 
 start "" "https://www.duckduckgo.com"
@@ -87,7 +87,8 @@ TIMEOUT /T 1
 start "" "file:///C:/Users/username/Documents/GitHub/qettu.github.io/index.html" :: <- change your local git path
 TIMEOUT /T 1
 start "" "https://github.com/qettu?tab=repositories" ::                          <- change your GitHub repository url
-
+:: Go to end of program (unnecessary now, but must be included if more choices are added)
+goto no
 
 
 
